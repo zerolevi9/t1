@@ -13,8 +13,8 @@ int main() {
 
   while (escolha != 's') {
     printf("\n Escolha uma opção: \n");
-    printf("(a) Converter uma imagem\n");
-    printf("(b) Sair\n");
+    printf("Selecione <a> Converter uma imagem\n");
+    printf("Ou selecione <b> para sair\n");
     scanf(" %c", &escolha);
 
     switch (escolha) {
@@ -22,7 +22,7 @@ int main() {
           break;
 
       case 'a':
-          printf(" \nConverter uma imagem PPM em PGM\n");
+          printf(" \nConverter uma imagem\n");
           printf("Caminho default? s ou n\n");
           scanf(" %c", &escolha);
           if (escolha == 's') {
@@ -52,7 +52,7 @@ int main() {
             write_to_ppm(new, "default.ppm");
           } 
           else {
-            printf("erro, tente novamente\n");
+            printf("Tente novamente\n");
           }         
           liberarImagem(new);
           liberarImagem(old);
